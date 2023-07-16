@@ -5,6 +5,8 @@
 *{
   font-family: 'Lato', sans-serif;
   font-family: 'Work Sans', sans-serif;
+
+ 
 }
 
 .btn-primary{
@@ -131,6 +133,56 @@ main{
 /* responsive media queries */
 /* mobile devices */
 
+/* feature section styles */
+.featuress{
+  display: flex;
+  margin-top: 130px;
+  gap: 100px;
+}
+
+.feature-content .card{
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+}
+
+.feature-content .section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
+}
+
+.feature-image img{
+  max-width: 500px;
+  margin-left: 40px;
+}
+
+.ten-years-badge{
+  border-radius: 8px;
+  background: #FF900E;
+  color: #FFF;
+  text-align: center;
+  width: 330px;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  bottom: 100px;
+}
+
+
+.ten-years-badge h3{
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0px;
+  
+}
+
+.ten-years-badge p{
+  font-size: 1.5rem;
+}
+
+
 /* facts section */
 .facts-card-container{
   display: flex;
@@ -179,6 +231,8 @@ main{
 /* responsive media queries */
 /* mobile devices */
 
+
+
 @media screen and (max-width: 576px) {
   header{
     padding: 20px;
@@ -197,9 +251,39 @@ main{
   .facts-card-container{
     gap: 20px;
   }
-  .sponsors-img-container{
 
+  .featuress{
+    flex-direction: column;
   }
+
+  .feature-content .card{
+   
+    padding: 10px;
+    /* max-width: 100%; */
+  }
+
+  .feature-image img{
+    max-width: 300px;
+    margin-left: 0px;
+  }
+
+  .ten-years-badge{
+    max-width: 250px;
+    bottom: 50px;
+  }
+  
+
+  .ten-years-badge h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0px;
+    
+  }
+  
+  .ten-years-badge p{
+    font-size: 1.5rem;
+  }
+ 
   
 }
 
@@ -210,12 +294,14 @@ main{
     padding: 50px;
   }
   
-  nav,.teams-container, .sponsors-img-container{
+  nav,.teams-container, .sponsors-img-container,.featuress{
     flex-direction: column;
   }
   .teams-img-container{
     padding-left: 0px;
   }
+  
+
 
   /* .teams-content{
     padding-right: 50px;
